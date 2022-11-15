@@ -217,7 +217,7 @@ body footer .buttons a:hover {
 .contenedor_form {
   width: 28rem;
   height: auto;
-  margin: 80px auto;
+  margin: 4rem auto;
   border-radius: 10px;
   padding: 30px 0px 20px 20px;
   background-color: rgba(70, 68, 68, 0.5254901961);
@@ -230,7 +230,7 @@ body footer .buttons a:hover {
   border-style: solid;
   border-width: 1px;
   border-color: #2e1f1f;
-  margin: 10px 0px 20px 0px;
+  margin: 1rem 0px 20px 0px;
   padding-left: 10px;
 }
 .contenedor_form textarea {
@@ -241,10 +241,10 @@ body footer .buttons a:hover {
   border-style: solid;
   border-width: 1px;
   border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1.1rem;
 }
 .contenedor_form label {
   display: block;
@@ -291,9 +291,9 @@ body footer .buttons a:hover {
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   body {
-    background-image: url(../../assets/imagenes/fondo2.jpg);
+    background-image: url(../assets/imagenes/fondo2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -324,5 +324,81 @@ body footer .buttons a:hover {
     height: 100%;
     width: 100%;
     position: absolute;
+  }
+  body .contenedor_form {
+    width: 23rem;
+    height: auto;
+    margin: 4rem auto;
+    border-radius: 10px;
+    padding: 30px 0px 20px 20px;
+    background-color: rgba(70, 68, 68, 0.5254901961);
+  }
+  body .contenedor_form input {
+    background-color: white;
+    width: 20rem;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2e1f1f;
+    margin: 1rem 0px 20px 0px;
+    padding-left: 10px;
+  }
+  body .contenedor_form textarea {
+    background-color: white;
+    width: 20rem;
+    height: 130px;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 1.1rem;
+  }
+  body .contenedor_form label {
+    display: block;
+    align-items: center;
+  }
+  body .contenedor_form button {
+    height: 45px;
+    width: 20rem;
+    padding: 10px 5px;
+    margin: 10px 0 20px 0;
+    text-transform: uppercase;
+    background-color: #5e2851;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 2%;
+    cursor: pointer;
+  }
+  body .contenedor_form button p {
+    color: white;
+  }
+  body .contenedor_form span {
+    color: #49203f;
+  }
+  body .contenedor_form .aviso {
+    font-size: 1rem;
+    color: #0e0e0e;
+  }
+  body .contenedor_form h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+  body .contenedor_form h3 {
+    font-size: 1rem;
+    padding-bottom: 30px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+  }
+  body .contenedor_form p {
+    font-size: 1rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
 }/*# sourceMappingURL=style.css.map */
