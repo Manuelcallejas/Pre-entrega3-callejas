@@ -1,4 +1,4 @@
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,7 +33,7 @@ main {
 
 }
 
-/*Index*/
+/*Index
 .main_index {
     display: flex;
     justify-content: center;
@@ -46,8 +46,8 @@ main {
 .contenido_index {
     width: 70%;
 }
-
-/*footer*/
+*/
+/*footer
 footer {
     grid-area: footer;
     height: 4rem;
@@ -137,7 +137,7 @@ main .card-inicio {
     }
 }
 
-
+*/
 /*
  nosotros
 .contenedor-banner-principal {

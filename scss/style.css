@@ -66,6 +66,15 @@ body footer .buttons a:hover {
 }
 
 /*Diseño de paginas*/
+.main_index {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.main_index .contenido_index {
+  width: 70%;
+}
+
 .conte_producto {
   width: 70%;
   height: 100%;
