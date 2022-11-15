@@ -1,0 +1,92 @@
+@import url(../utilidad/_variables.scss);
+.contenedor_form {
+    width: 28rem;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding: 30px 0px 20px 20px;
+    background-color: #46444486;
+
+
+    input {
+        background-color: $primario;
+        width: 25rem;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #2e1f1f;
+        margin: 10px 0px 20px 0px;
+        padding-left: 10px;
+    }
+
+
+    textarea {
+        background-color: $primario;
+        width: 25rem;
+        height: 130px;
+        border-radius: 5%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ab4493;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+
+
+    label {
+        display: block;
+        align-items: center;
+    }
+
+    button {
+        height: 45px;
+        width: 25rem;
+        padding: 10px 5px;
+        margin: 10px 0 20px 0;
+        text-transform: uppercase;
+        background-color: #5e2851;
+        border-color: #ab4493;
+        border-style: solid;
+        border-radius: 2%;
+        cursor: pointer;
+
+
+        p {
+            color: $primario;
+        }
+    }
+
+    span {
+        color: #49203f;
+    }
+
+    .aviso {
+        font-size: 1rem;
+        color: #0e0e0e;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        text-align: center;
+        padding-bottom: 20px;
+        color: $primario;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h3 {
+        font-size: 1rem;
+        padding-bottom: 30px;
+        color: $secundario;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $primario;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}

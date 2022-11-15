@@ -1,0 +1,49 @@
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../../assets/imagenes/fondo2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+        .ubicacion {
+            width: 50%;
+
+            h3 {
+                color: $primario;
+                text-align: center;
+            }
+
+            div {
+                text-align: center;
+                width: 50;
+            }
+
+        }
+
+        .ubicacion {
+            overflow: hidden;
+
+            padding-bottom: 56.25%;
+
+            position: relative;
+
+            height: 0;
+
+            h3 {
+                color: $primario;
+                text-align: center;
+            }
+
+            div {
+                text-align: start;
+
+                height: 100%;
+
+                width: 100%;
+
+                position: absolute;
+            }
+        }
+
+    }
+}

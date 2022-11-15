@@ -1,0 +1,328 @@
+@charset "UTF-8";
+@import url(../utilidad/_variables.scss);
+@import url(../utilidad/_variables.scss);
+@import url(../utilidad/_variables.scss);
+@import url(../utilidad/_variables.scss);
+@import url(../utilidad/_variables.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "navbar navbar" "contenido contenido" "footer footer";
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 2fr, 15fr, 1fr;
+  background-image: url(../assets/imagenes/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body header {
+  grid-area: navbar;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 64, 95);
+}
+body main {
+  grid-area: contenido;
+  width: 100%;
+}
+body footer {
+  grid-area: footer;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .buttons {
+  min-width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+body footer .buttons a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  line-height: 2rem;
+  text-align: center;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+body footer .buttons a:hover {
+  transform: scale(1.2);
+}
+
+/*Diseño de paginas*/
+.conte_producto {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.conte_producto .foto {
+  width: 370px;
+  height: 550px;
+  border-radius: 5%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.conte_producto .foto:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.conte_producto .foto img {
+  width: 370px;
+  height: 500px;
+}
+.conte_producto .titulo_p {
+  padding-top: 10px;
+  font-size: 1.4rem;
+}
+.conte_producto .titulo_p a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.contenedor-banner-principal {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+  -webkit-animation: 15s infinite linear alternate;
+          animation: 15s infinite linear alternate;
+  margin: 5rem auto;
+}
+.contenedor-banner-principal .capa-degradado {
+  min-width: 100%;
+  height: 25rem;
+  position: absolute;
+  background-image: linear-gradient(to left, #191919, #C2000B);
+  opacity: 0.5;
+  margin: auto;
+}
+.contenedor-banner-principal .contenedor-detalles {
+  width: 100%;
+  margin: auto;
+  height: 25rem;
+}
+.contenedor-banner-principal .contenedor-detalles .detalles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20rem;
+  position: relative;
+  padding-top: 3rem;
+  color: white;
+  margin: auto;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contenedor-banner-principal .contenedor-detalles .detalles h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+}
+.contenedor-banner-principal .contenedor-detalles .detalles p {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-align: center;
+}
+.contenedor-banner-principal .contenedor-detalles .detalles a {
+  padding: 1rem 0.5rem;
+  font-size: 16px;
+  border: 1px solid white;
+  color: white;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contenedor-banner-principal .contenedor-detalles .detalles a:hover {
+  background: white;
+  color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.contenedor-banner-principal .contenedor-detalles .detalles a h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1.2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.parrafos {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 3vw;
+}
+
+.ubicacion {
+  padding: auto;
+  height: 30%;
+}
+.ubicacion h3 {
+  color: white;
+  text-align: center;
+}
+.ubicacion div {
+  text-align: center;
+}
+
+.fondo-galery {
+  width: 100%;
+  background-color: rgba(123, 128, 128, 0.103);
+}
+.fondo-galery .galeria-img {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: rgba(116, 111, 111, 0.438);
+}
+.fondo-galery .galeria-img .imagenes {
+  width: 400px;
+  padding: 1rem;
+}
+
+.contenedor_form {
+  width: 28rem;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding: 30px 0px 20px 20px;
+  background-color: rgba(70, 68, 68, 0.5254901961);
+}
+.contenedor_form input {
+  background-color: white;
+  width: 25rem;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2e1f1f;
+  margin: 10px 0px 20px 0px;
+  padding-left: 10px;
+}
+.contenedor_form textarea {
+  background-color: white;
+  width: 25rem;
+  height: 130px;
+  border-radius: 5%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.contenedor_form label {
+  display: block;
+  align-items: center;
+}
+.contenedor_form button {
+  height: 45px;
+  width: 25rem;
+  padding: 10px 5px;
+  margin: 10px 0 20px 0;
+  text-transform: uppercase;
+  background-color: #5e2851;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 2%;
+  cursor: pointer;
+}
+.contenedor_form button p {
+  color: white;
+}
+.contenedor_form span {
+  color: #49203f;
+}
+.contenedor_form .aviso {
+  font-size: 1rem;
+  color: #0e0e0e;
+}
+.contenedor_form h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.contenedor_form h3 {
+  font-size: 1rem;
+  padding-bottom: 30px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.contenedor_form p {
+  font-size: 1rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../../assets/imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  body .ubicacion {
+    width: 50%;
+  }
+  body .ubicacion h3 {
+    color: white;
+    text-align: center;
+  }
+  body .ubicacion div {
+    text-align: center;
+    width: 50;
+  }
+  body .ubicacion {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  body .ubicacion h3 {
+    color: white;
+    text-align: center;
+  }
+  body .ubicacion div {
+    text-align: start;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}/*# sourceMappingURL=style.css.map */
