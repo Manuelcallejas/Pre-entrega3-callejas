@@ -29,7 +29,7 @@ body header {
   grid-area: navbar;
   width: 100%;
   height: 100%;
-  background-color: rgb(29, 64, 95);
+  background-color: rgba(17, 57, 92, 0.856);
 }
 body main {
   grid-area: contenido;
@@ -68,11 +68,51 @@ body footer .buttons a:hover {
 /*Diseño de paginas*/
 .main_index {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 10px 0px;
 }
 .main_index .contenido_index {
+  padding-top: 1rem;
+  width: 80%;
+  justify-content: center;
+}
+.main_index .card-inicio {
   width: 70%;
+  margin-top: 1rem;
+}
+.main_index .card-inicio .card.mb {
+  background-image: linear-gradient(to left, #191919, #C2000B);
+}
+.main_index .card-inicio .card.mb:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.main_index .card-inicio .card.mb .card-title {
+  color: white;
+}
+.main_index .card-inicio .card.mb .card-text {
+  color: white;
+}
+.main_index .card-i {
+  width: 70%;
+  height: 7rem;
+  background-image: linear-gradient(to left, #191919, #C2000B);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+.main_index .card-i:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.main_index .card-i h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main_index .card-i p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
 }
 
 .conte_producto {
@@ -89,7 +129,7 @@ body footer .buttons a:hover {
   border-radius: 5%;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
+  padding-top: 1rem;
   text-align: center;
   transition: all 0.25s;
 }
@@ -190,7 +230,7 @@ body footer .buttons a:hover {
   text-align: center;
   margin: auto;
   color: white;
-  font-size: 3vw;
+  font-size: 1rem;
 }
 
 .ubicacion {
@@ -265,11 +305,15 @@ body footer .buttons a:hover {
   padding: 10px 5px;
   margin: 10px 0 20px 0;
   text-transform: uppercase;
-  background-color: #5e2851;
-  border-color: #ab4493;
+  background-image: linear-gradient(to left, #C2000B, #191919);
+  border-color: black;
   border-style: solid;
-  border-radius: 2%;
+  border-radius: 2rem;
   cursor: pointer;
+}
+.contenedor_form button:hover {
+  transform: translate(1px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 .contenedor_form button p {
   color: white;
@@ -409,5 +453,22 @@ body footer .buttons a:hover {
     font-size: 1rem;
     color: white;
     font-family: "Roboto", sans-serif;
+  }
+  body .fondo-galery {
+    width: 100%;
+    background-color: rgba(123, 128, 128, 0.103);
+  }
+  body .fondo-galery .galeria-img {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(116, 111, 111, 0.438);
+  }
+  body .fondo-galery .galeria-img .imagenes {
+    width: 80%;
+    padding-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
