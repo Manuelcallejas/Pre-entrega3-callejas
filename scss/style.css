@@ -36,15 +36,30 @@ body main {
   width: 100%;
 }
 body footer {
+  background-color: rgba(0, 0, 0, 0.712);
   grid-area: footer;
-  height: 100px;
   width: 100%;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+body footer .footer-col {
+  width: 40%;
+  text-align: center;
+}
+body footer .footer-col a {
+  color: white;
+  text-decoration: none;
+}
+body footer .footer-col ul {
+  list-style: none;
+}
+body footer .footer-col ul li:hover {
+  transform: translate(-15px);
+}
 body footer .buttons {
-  min-width: 60%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
 }
@@ -234,8 +249,8 @@ body footer .buttons a:hover {
 }
 
 .ubicacion {
+  justify-content: center;
   padding: auto;
-  height: 30%;
 }
 .ubicacion h3 {
   color: white;
@@ -261,6 +276,10 @@ body footer .buttons a:hover {
 .fondo-galery .galeria-img .imagenes {
   width: 400px;
   padding: 1rem;
+}
+.fondo-galery .galeria-img .imagenes:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contenedor_form {
@@ -352,7 +371,7 @@ body footer .buttons a:hover {
     background-size: cover;
   }
   body .ubicacion {
-    width: 50%;
+    width: 100%;
   }
   body .ubicacion h3 {
     color: white;
@@ -360,7 +379,6 @@ body footer .buttons a:hover {
   }
   body .ubicacion div {
     text-align: center;
-    width: 50;
   }
   body .ubicacion {
     overflow: hidden;
@@ -470,5 +488,37 @@ body footer .buttons a:hover {
   body .fondo-galery .galeria-img .imagenes {
     width: 80%;
     padding-top: 1rem;
+  }
+  body footer {
+    grid-area: footer;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .footer-col {
+    display: none;
+  }
+  body footer .buttons {
+    min-width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  body footer .buttons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    line-height: 2rem;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+  }
+  body footer .buttons a:hover {
+    transform: scale(1.2);
   }
 }/*# sourceMappingURL=style.css.map */

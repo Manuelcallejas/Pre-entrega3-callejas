@@ -1,4 +1,5 @@
 @import url(../utilidad/_variables.scss);
+
 body {
     display: grid;
     height: 100%;
@@ -25,35 +26,56 @@ body {
     }
 
     footer {
+        background-color: rgba(0, 0, 0, 0.712);
         grid-area: footer;
-        height: 100px;
         width: 100%;
+        height: 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .buttons {
-            min-width: 60%;
-            display: flex;
-            justify-content: space-around;
+        .footer-col {
+            width: 40%;
+            text-align: center;
 
             a {
+                color: $primario;
                 text-decoration: none;
-                font-size: 1.5rem;
-                width: 2.3rem;
-                height: 2.3rem;
-                line-height: 2rem;
-                text-align: center;
-                background: $primario;
-                color: $secundario;
-                border-radius: 50%;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-                transition: all .4s ease-in-out;
 
-                &:hover {
-                    transform: scale(1.2);
+            }
+            ul {
+                list-style: none;
+
+                li {
+                    &:hover {
+                        transform: translate(-15px);
+                    }
+                }
+            }
+        }
+
+            .buttons {
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    line-height: 2rem;
+                    text-align: center;
+                    background: $primario;
+                    color: $secundario;
+                    border-radius: 50%;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+                    transition: all .4s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
             }
         }
     }
-}
